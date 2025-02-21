@@ -7,12 +7,11 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 1000;
 
-connectDB(); // ✅ Connect to MongoDB
+connectDB(); 
 
-app.use(express.json()); // ✅ JSON Middleware
+app.use(express.json());
 
-// ✅ Sahi API Route Register Karein
-app.use("/api/v1", userRoutes); // ✅ "api" spelling check karein!
+app.use("/api/v1", userRoutes);
 
 app.listen(PORT, () => {
   console.log(`🚀 Server is running on port ${PORT}`);
