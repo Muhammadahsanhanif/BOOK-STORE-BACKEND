@@ -6,7 +6,7 @@ const book =new mongoose.Schema({
         type:String,
         required:true
     },
-    titile:{
+    title:{
         type:String,
         required:true
     },
@@ -29,4 +29,4 @@ const book =new mongoose.Schema({
     
 },{timestamps:true})
 
-module.exports = mongoose.model("book",book)
+export default mongoose.model("book", book);
